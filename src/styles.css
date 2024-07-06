@@ -11,7 +11,7 @@ body {
 header {
   width: 100%;
   background-color: #0400ff;
-  z-index: 1000; /* Ensure the header is on top */
+  z-index: 1000;
   position: relative;
 }
 
@@ -313,7 +313,6 @@ select {
   }
 }
 
-/* Style for error message */
 .error-message {
   color: red;
   text-align: center;
@@ -402,7 +401,7 @@ main {
 }
 
 .footer-column {
-  flex: 0 0 100%; /* Adjust width to show 1 column */
+  flex: 0 0 100%; 
   margin: 0 0 10px 0;
 }
 
@@ -505,12 +504,11 @@ main {
 }
 
 .footer-column {
-  flex: 0 0 48%; /* Adjust width to show 2 columns */
+  flex: 0 0 48%; 
   margin: 1%;
 }
 }
 
-/* Additional breakpoints for Desktop */
 @media (min-width: 1024px) {
   .navbar {
       padding: 0 8%;
