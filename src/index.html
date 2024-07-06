@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="navbar-toggle" id="navbarToggle">
+            &#9776;
+        </div>
+        <div class="navbar-logo">
+            <!-- <img src="logo.png" alt="Logo"> -->
+            <h4>VENIA</h4>
+        </div>
+        <ul class="navbar-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-cart">
+            <img src="assets/imgs/icons8-shopping-bag-96.png" alt="Cart">
+        </div>
+    </nav>
+</header>
+<section class="banner">
+    <div class="banner-text">
+        <h1>Men's <br>Clothing</h1>
+    </div>
+    <div class="banner-image">
+        <img src="assets/imgs/Mask Group 31.PNG" alt="Banner">
+    </div>
+</section>
+<main>
+  <div class="sub-titles">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <i class="fa fa-search search-icon"></i>
+    </div>
+    <select id="sortPrice">
+      <option value="default">Sort by Price</option>
+      <option value="asc">Price: Low to High</option>
+      <option value="desc">Price: High to Low</option>
+    </select>
+  </div>
+  <div class="container">
+    <div class="filters">
+      <h2>Filters</h2>
+      <hr>
+      <div class="filter-category">
+        <h4>Category</h4>
+        <label><input type="checkbox" id="jewellery" class="filter-button" data-category="jewelery" />Jewellery</label>
+        <label><input type="checkbox" id="electronics" class="filter-button" data-category="electronics" />Electronics</label>
+        <label><input type="checkbox" id="mens-clothing" class="filter-button" data-category="men's clothing" />Men's Clothing</label>
+        <label><input type="checkbox" id="womens-clothing" class="filter-button" data-category="women's clothing" />Women's Clothing</label>
+    </div>
+    <hr>
+    <div class="filter-category">
+      <h4>Price</h4>
+      <label><input type="checkbox" class="filter-price" name="price" value="0-50"> $0 - $50</label>
+      <label><input type="checkbox" class="filter-price" name="price" value="50-100"> $50 - $100</label>
+      <label><input type="checkbox" class="filter-price" name="price" value="100-200"> $100 - $200</label>
+      <label><input type="checkbox" class="filter-price" name="price" value="200-500"> $200 - $500</label>
+    </div>
+    
+  <hr>
+  <div class="filter-category">
+    <h4>Availability</h4>
+    <label><input type="checkbox" name="availability" value="in stock"> In Stock</label>
+    <label><input type="checkbox" name="availability" value="out of stock"> Out of Stock</label>
+</div>
+    </div>
+    <div class="product-list">
+      <!-- <h2>Products</h2> -->
+      <div class="products-grid" id="products-grid"></div>
+      <div id="heart-container"></div>
+    </div>
+  </div>
+  <div class="pagination">
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">&gt;</a>
+  </div>
+</main>
+<hr>
+<div id="loading-indicator" class="loading-indicator"></div>
+<div id="products-grid" class="products-grid"></div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Order Status</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>About Us</h4>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Order Status</a></li>
+        <li><a href="#">Returns</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us!</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore.
+      </p>
+      <div class="social-icons">
+        <i class="fa fa-instagram" style="font-size: 24px"></i>
+        <i class="fa fa-facebook" style="font-size: 24px"></i>
+        <i class="fa fa-twitter" style="font-size: 24px"></i>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <h2>VENIA</h2>
+    <p>© Company Name Address Ave, City Name, State ZIP</p>
+    <ul>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
